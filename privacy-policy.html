@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Alverra Wellness Haven</title>
+  <link rel="icon" type="image/png" href="image/FAVICON.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #348a7a;
+      --accent: #8fcf7f;
+      --background: #f5f9f7;
+      --white: #fff;
+      --radius: 1rem;
+      --shadow: 0 8px 28px 0 rgba(52,138,122,0.11);
+      --footer-bg: #244f44;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--background);
+      color: #1b3131;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 700px;
+      margin: 2.5rem auto 2.5rem auto;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 2.5rem 1.5rem 2rem;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--primary);
+      font-weight: 900;
+      margin-bottom: 1.2rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: var(--accent);
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: .7rem;
+    }
+    p, ul {
+      font-size: 1rem;
+      color: #1b3131;
+      margin-bottom: 1.1rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+      margin-top: .6rem;
+    }
+    li {
+      margin-bottom: .6rem;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1.2rem .6rem 1.2rem; }
+      h1 { font-size: 1.3rem; }
+      h2 { font-size: 1.03rem; }
+      p, ul { font-size: .97rem; }
+    }
+    .footer {
+      background: var(--footer-bg);
+      color: var(--white);
+      padding: 2rem 0 1rem;
+      text-align: center;
+      font-size: .98rem;
+      border-radius: var(--radius) var(--radius) 0 0;
+      margin-top: 2rem;
+    }
+    .footer-logo {
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 900; gap: .5rem; margin-bottom: 0.45rem; color: var(--accent);
+    }
+    .footer-logo img { width: 28px; height: 28px; }
+    .footer-links {
+      margin: .8rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .footer-link { color: #e7f5ef; font-size: .96rem; transition: color .2s; opacity: .94;}
+    .footer-link:hover { color: var(--accent);}
+    .footer-bottom { margin-top: 1.2rem; color: #e7f5ef; opacity: .85;}
+    .footer-bottom a { color: #fff; font-weight: 700; text-decoration: underline; transition: color .2s;}
+    .footer-bottom a:hover { color: var(--accent);}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p>
+      At Alverra Wellness Haven, your privacy is of the utmost importance to us. We are committed to treating your personal information with respect and care, ensuring that you feel secure every step of your wellness journey.
+    </p>
+    <h2>Information We Collect</h2>
+    <p>
+      When you interact with our website, book appointments, or purchase products, we may collect certain information to serve you better. This includes your name, contact details, address, and any information relevant to your wellness preferences.
+    </p>
+    <h2>How We Use Your Data</h2>
+    <p>
+      We use your information to provide our services, process orders, improve our offerings, and communicate with you regarding appointments, products, or promotions. Your data is never shared or sold to third parties for marketing purposes.
+    </p>
+    <h2>Data Security</h2>
+    <p>
+      We implement robust security measures to keep your information safe, including encrypted storage and secure access controls. Only authorized staff may view your data as needed to fulfill your requests.
+    </p>
+    <h2>Your Choices & Rights</h2>
+    <ul>
+      <li>You may request access to your personal data at any time.</li>
+      <li>You may update or correct your information by contacting us directly.</li>
+      <li>You can opt out of promotional communications by following the unsubscribe instructions provided.</li>
+      <li>If you have concerns about your privacy, contact us at <a href="mailto:contact@alverrawellness.life">contact@alverrawellness.life</a>.</li>
+    </ul>
+    <h2>Cookies & Tracking</h2>
+    <p>
+      Our website may use cookies to enhance your browsing experience and analyze usage trends. You can adjust your browser settings to decline cookies if you prefer.
+    </p>
+    <h2>Policy Updates</h2>
+    <p>
+      We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We encourage you to check this page periodically for the latest information.
+    </p>
+    <p>
+      Thank you for trusting Alverra Wellness Haven. Your privacy is our promise.
+    </p>
+  </div>
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="image/LOGO.png" alt="Alverra Wellness Haven Logo" />
+      Alverra Wellness Haven
+    </div>
+    <div class="footer-links">
+      <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+      <a href="terms.html" class="footer-link">Terms of Service</a>
+      <a href="refund-policy.html" class="footer-link">Refund Policy</a>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="footer-year"></span> Alverra Wellness Haven | TIN: 635-297-801-000<br>
+      Serving Bacoor City and surrounding communities.
+    </div>
+  </footer>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
