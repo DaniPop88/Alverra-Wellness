@@ -742,7 +742,7 @@
         const card = btn.closest('.product-card');
         const pid = parseInt(card.getAttribute('data-id'));
         addToCart(pid);
-        openCart();
+        // openCart(); // Hapus baris ini agar cart tidak terbuka otomatis setelah add to cart
       });
     });
 
